@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+	<head>
+  		<source src=home.mp3 type=audio/mp3>
+		</audio>
+
+		<title> Morph!tale Official Website (home)
+		</title>
+		<link rel="stylesheet" href="stylesheet.css">
+	</head>
+
+<body>
+<center>
+	<font size = "7">GAME</font>
+
+	<table border=3 bordercolor=black>
+		<tr>
+			<td><a href="/Users/sean/Desktop/Choice_Choi_Sean/index.html"><img src="home.png" max-width: 50% height="100"></a></td>
+			<td><a href="/Users/sean/Desktop/Choice_Choi_Sean/comic.html"><img src="comics.png" max-width: 50% height="100"></a></td>
+			<td><a href="/Users/sean/Desktop/Choice_Choi_Sean/game.html"><img src="game.png" max-width: 50% height="100"></a></td>
+			<td><a href="/Users/sean/Desktop/Choice_Choi_Sean/contact.html"><img src="contact.png" max-width: 50% height="100"></a></td>
+			<td><a href="/Users/sean/Desktop/Choice_Choi_Sean/about.html"><img src="aboutme.png" max-width: 50% height="100"></a></td>
+		</tr>
+	<table border="3" bordercolor=black>
+		<tr>
+		<td><center>This is the site made to update the progress for the Morph!tale game. All coding done by me.....HELP!!</center></td>
+		</tr>
+	</table>
+	<br>
+	<table border="3" bordercolor=black width="1000">
+		<tr>
+		<td><center>4/23/2023</center></td>
+		</tr>
+		<tr><td>
+		<img src=CYF_logo.png></td>
+	<td><center>Downloaded CreateYourFrisk. Currently taking Unitale crashcourse. Gained an average knowledge of Lua.</center></td></tr>
+	</table>
+	<br>
+
+	<table border="3" bordercolor=black width="1000">
+		<tr>
+		<td><center>5/2/2023</center></td>
+		</tr><td>
+		<img src=sans.png width="450"><img src=frisk.png width="450"></td>
+		<tr><td><center>Drew Sans and Frisk sprites on Pixilart(not a misspelled word, name of site), and separated body parts. Very happy with the result. Separating sprites were painful...</center></td></tr>
+	</table>
+	<br>
+
+	<table border="3" bordercolor=black width="1000">
+		<tr>
+		<td><center>5/5/2023</center></td>
+		</tr><td>
+		<video width="1000" height="500" controls>
+  		<source src="animation.mp4" type="video/mp4">
+		</video></td>
+		<tr><td><center>Completed all animations. First set the Sans sprite's leg to the parent of the body, the body to the parent of the head and arm, the arms to the parent of the bone. Later planning to move the legs sprite to make Sans dodge. The connected the leg sprite to one point and made the body move along the (Math.sin(Time.time*2), Math.sin(Time.time*2)). Made the head move more intensely with Time.time*4. Did same thing for Frisk.</center></td></tr>
+	</table>
+	<br>
+
+	<table border="3" bordercolor=black width="1000">
+		<tr>
+		<td><center>5/9/2023</center></td>
+		</tr><td>
+		<video width="1000" height="500" controls>
+  		<source src="1st_blaster_attack.mp4" type="video/mp4">
+		</video></td>
+		<tr><td><center>Downloaded Gaster Blaster Library by AllyTally. Created first wave featuring gaster blaster. Made gaster blasters shoot three directions from the same location so that it looks like a bomb. made puppies(planning to change to bone) move in a sin(Time.time) line horizontally. Planning to add this wave to another wave.</center></td></tr>
+	</table>
+	<br>
+	<table border="3" bordercolor=black width="1000">
+		<tr>
+		<td><center>5/12/2023</center></td>
+		</tr><td>
+		<video width="1000" height="500" controls>
+  		<source src="yuvin.mp4" type="video/mp4">
+		</video></td>
+		<tr><td><center>Created another wave implementing the previous wave. Made bones go to player following the sin(Time.time*3) line vertically and added the blaster bomb. Also made blasters shoot vertically while moving right and left slowly by creating a variable "moveX" and adding it to the blaster's X position and changing the "moveX" if the blaster goes off the screen. So proud of myself.</center></td></tr>
+	</table>
+	<br>
+
+	<table border="3" bordercolor=black width="1000">
+		<tr>
+		<td><center>5/14/2023 (help)</center></td>
+		</tr><td>
+		<video width="1000" height="500" controls>
+  		<source src="gravityflip.mp4" type="video/mp4">
+		</video></td>
+		<tr><td><center>Downloaded Bluesoul Library by WD200019. Supports 4- way gravity and platforms. Working on an attack that when the player touches the gray bone, the gravity inverts. Can't seem to access the blue soul's Dir() variable from another script, and unable to make the table containing the gray bone work. Needs more work.</center></td></tr>
+	</table>
+	<br>
+
+	<table border="3" bordercolor=black width="1000">
+		<tr>
+		<td><center>5/20/2023 (help)</center></td>
+		</tr><td>
+		<video width="1000" height="500" controls>
+  		<source src="dodge_item.mp4" type="video/mp4">
+		</video></td>
+		<tr><td><center>Working on Sans's and Frisk's dodge animation. Made another script, but as it does not connect to the original encounter script, just moved it to the Encounter script. Tried to access the HandleAttack() function, but as the legs(which are the parent sprite of the body, arms, and head) are connected to the encounter script and the HandleAttack() function is in the sans.lua script, can't integrate the dodge animation. Need more work. Additionally, trying to make items work. Heals one time, but does not disappear and the turn does not end. Need more work.</center></td></tr>
+	</table>
+	<br>
+
+	<table border="3" bordercolor=black width="1000">
+		<tr>
+		<td><center>5/23/2023</center></td>
+		</tr><td>
+		<video width="1000" height="500" controls>
+  		<source src="shoot.mp4" type="video/mp4">
+		</video></td>
+		<tr><td><center>Hardest work done. Made the Gaster Blaster shoot at player. As the blaster is spawned with blaster.New(spawn.x, spawn.y, move.x, move.y, direction), I used the Inverse Tangent function to make the blaster follow player. Got tangent with (Player.x - Blasters.x)/(Player.y - Blaster.y), and used Math.atan() to get the direction. Works successfully. Rewarded myself with a piece of chocolate.</center></td></tr>
+	</table>
+	<br>
+
+</center>
+</body>
+</html>
